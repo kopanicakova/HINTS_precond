@@ -1,0 +1,34 @@
+#!/bin/bash -l
+
+#SBATCH --job-name=test
+#SBATCH --time=200:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-core=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --hint=nomultithread
+#SBATCH --constraint=gpu
+#SBATCH --account=c25
+#SBATCH --output=test.out
+
+module load daint-gpu
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export NCCL_DEBUG=INFO
+export NCCL_IB_HCA=ipogif0
+export NCCL_IB_CUDA_SUPPORT=1
+export NUMEXPR_MAX_THREADS=1
+
+
+source /scratch/snx3000/alenak/firedrake_14_Jan_2024/firedrake/bin/activate
+export PYTHONPATH="${PYTHONPATH}:/scratch/snx3000/alenak/firedrake_14_Jan_2024/ONETPrecond/hints_precond"
+
+
+export PYTHONPYCACHEPREFIX="/scratch/snx3000/alenak/firedrake_14_Jan_2024/ONETPrecond/.cache/Python"
+export XDG_CACHE_HOME="/scratch/snx3000/alenak/firedrake_14_Jan_2024/ONETPrecond/.cache_xdg/Python"
+export FIREDRAKE_CACHE_DIR="/scratch/snx3000/alenak/firedrake_14_Jan_2024/ONETPrecond/.cache_fd/Python"
+
+
+srun -u python3 -u hints_test_HINTSgmg_sampled_k.py --batch_size 2500 --k_lo 0.1  --epochs 50000000 --force_retrain true --recreate_data false --only_train false --num_samples_total ${1} --num_samples ${1} --num_basis_functions ${2} --dofs_don ${3} --k_sigma ${4}
+# srun -u python3 -u hints_test_HINTSgmg_NOsampled_k.py --batch_size 2500 --k_lo 0.1  --epochs 50000000 --force_retrain true --recreate_data false --only_train false --num_samples_total ${1} --num_samples ${1} --num_basis_functions ${2} --dofs_don ${3} --k_sigma ${4}
+
+
