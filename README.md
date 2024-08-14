@@ -1,4 +1,5 @@
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![DOI](https://zenodo.org/badge/841994693.svg)](https://zenodo.org/doi/10.5281/zenodo.13321073)
 
 # HINTS: Preconditioning of Krylov methods (The linear-systems are assembled and solved using Firedrake and PETSc.)
 
