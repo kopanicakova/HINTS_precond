@@ -3,7 +3,7 @@
 # HINTS: Firedrake and petsc4py
 
 # Preconditioning of Krylov methods using HINTS. The problems are assembled and solved using Firedrake and petsc4py. 
-This repository contains the code used to generate results in the paper: <br> 
+This repository contains the code used to generate large-scale results in the paper: <br> 
 **Blending Neural Operators and Relaxation Methods in PDE Numerical Solvers by Zhang, Kahana, Kopanicakova, Turkel, Ranade, Pathak, and Karniadakis.**<br> 
 
 If you use the developed code/its components for your research, please use the following bibtex entries (or equivalent) to cite us
@@ -57,7 +57,9 @@ GPU is not necessary but it is highly desirable for training the DeepONets
 	3.4   cd example
 
 
-##### 3.5. 	Running numerical experiments: We have uploaded a dataset with 10,000 samples to test the devised HINTs preconditioners. However, a larger dataset was used to produce the results in the paper. You can generate the larger dataset by yourself and train the DeepOnets accordingly. Note that by training DeepOnet using larger datasets, the HINTS preconditioner typically performs better (on average by 20-35%). To run the different examples, one can use the following commands: 
+##### 3.5. 	Running numerical experiments: 
+We have uploaded an instance of the dataset used for generating large-scale results to Zenodo, which can be downloaded from https://zenodo.org/records/10904349/files/NonNestedHelm3D_5000_1_32_1_0.0001.pkl?download=1. 
+You can generate larger/smaller datasets by yourself using code. Note that by training DeepOnet using larger datasets, the HINTS preconditioner typically performs better (on average by 20-35%). To run the different examples, one can use the following commands: 
 			
 
 	3.5.1. HYPRE-AMG preconditioner: 
