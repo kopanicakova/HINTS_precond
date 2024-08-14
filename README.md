@@ -57,7 +57,7 @@ GPU is not necessary but it is highly desirable for training the DeepONets
 	3.4   cd example
 
 
-##### 3.5. 	Testing different examples: We have uploaded a dataset with 10,000 samples to test the devised HINTs preconditioners. However, a larger dataset was used to produce the results in the paper, in particular with 250,000 samples. Unfortunately, we are not able to upload that dataset due to its large size. You can generate the data by themselves and train the DeepOnets accordingly. Note, by training DeepOnet using larger datasets, the HINTS preconditioner typically performs better (on average by 20-35%). To run the different examples, execute: 
+##### 3.5. 	Running numerical experiments: We have uploaded a dataset with 10,000 samples to test the devised HINTs preconditioners. However, a larger dataset was used to produce the results in the paper. You can generate the larger dataset by yourself and train the DeepOnets accordingly. Note that by training DeepOnet using larger datasets, the HINTS preconditioner typically performs better (on average by 20-35%). To run the different examples, one can use the following commands: 
 			
 
 	3.5.1. HYPRE-AMG preconditioner: 
