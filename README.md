@@ -79,7 +79,7 @@ GPU is not necessary but it is highly desirable for training the DeepONets effic
 1. Make sure to deactivate any conda enviroment you might have!
 2. Install Firedrake - official guidance can be found at https://www.firedrakeproject.org/download.html.
    
-	We have followed these steps:
+	We have followed these steps: <br>
 	2.1. mkdir my_firedrake <br>
  	2.2. cd my_firedrake <br>
 	2.3. curl -O https://raw.githubusercontent.com/firedrakeproject/firedrake/master/scripts/firedrake-install <br>
