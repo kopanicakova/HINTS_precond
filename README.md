@@ -45,13 +45,13 @@ If that case, a proper installation of the GPU drivers (such as CUDE integration
 ### Instructions to run the code
 The usage of the code is through a file called 'configs.py' located in the HINTS_NP project folder. <br>
 1. To train a DeepONet, choose the desired parameters (such as the dimension, the problem, the domain size, etc.). <br>
-2. Set the variable 'ITERATION_METHOD' to 'DeepONet'. <br>
+2. Set the variable 'ITERATION_METHOD' to 'DeepONet' and execute python3 main.py <br>
 * This will automatically create data, train a DeepONet and finally throw an error. <br>
 The reason for that is the code is able to do 'Only DeepONet' mode, which is not intended in most cases of HINTS. <br>
 3. During training, the folder 'debug_figs' will start logging images based on the plotting interval config. <br>
 These help monitor the training and see that the network trains well. <br>
 4. After training is done, a model is saved into models folder. <br>
-5. Set the variable 'ITERATION_METHOD' to 'Numerical_DeepONet_Hybrid' to run the HINTS. <br>
+5. Set the variable 'ITERATION_METHOD' to 'Numerical_DeepONet_Hybrid' to run the HINTS as: python3 main.py <br>
 6. The outputs are logged into the outputs folder. (Typical run time for 1D examples is < 10 mins, including training of DeepONet. Expected output is reported in manuscript, see for example convergence plots on Figure 3B for 1D Poisson equation and HINTS-Jacobi solver.) <br>
 
 To train another DeepONet (change the problem/scenario) the results.npz file in the output folder needs to be deleted. <br>
