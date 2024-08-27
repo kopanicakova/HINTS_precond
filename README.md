@@ -122,7 +122,7 @@ This code was developed for research purposes only. The authors make no warranti
 The software is realized with NO WARRANTY and it is licenzed under [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause)
 
 # Copyright
-Copyright (c) 2024 Brown University and Università della Svizzera Italiana (Euler Institute)
+Copyright (c) 2024 Brown University
 
 
 ## Contact
