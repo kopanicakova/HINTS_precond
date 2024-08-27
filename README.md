@@ -126,7 +126,7 @@ Copyright (c) 2024 Brown University and Università della Svizzera Italiana (Eul
 
 
 ## Contact
-Alena Kopaničáková (<alena.kopanicakova@usi.ch>)
+Alena Kopaničáková (<alena.kopanicakova@usi.ch>), 
 Adar Kahana (<adar.kahana@brown.edu>)
 
 
