@@ -1,7 +1,7 @@
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![DOI](https://zenodo.org/badge/841994693.svg)](https://zenodo.org/doi/10.5281/zenodo.13321073)
 
-# HINTS: This repository contains the code used to generate large-scale results in the paper: <br> **"Blending Neural Operators and Relaxation Methods in PDE Numerical Solvers" by Zhang, Kahana, Kopanicakova, Turkel, Ranade, Pathak, and Karniadakis.**<br> 
+# HINTS: This repository contains the code used to generate results in the paper: <br> **"Blending Neural Operators and Relaxation Methods in PDE Numerical Solvers" by Zhang, Kahana, Kopanicakova, Turkel, Ranade, Pathak, and Karniadakis.**<br> 
 
 If you use the developed code/its components for your research, please use the following bibtex entries (or equivalent) to cite us
 ```bibtex
