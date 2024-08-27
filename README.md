@@ -90,7 +90,7 @@ GPU is not necessary but it is highly desirable for training the DeepONets effic
 ### Instructions to run the code
 3.1. source the firedrake enviroment, i.e., <br> 
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  . /my_path/my_firedrake/firedrake/bin/activate <br>
-3.2. cd HINTS_PETSC <br>
+3.2. cd HINTS_petsc <br>
 3.3. Export path to HINTS_petsc code, i.e.,   <br> 
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; export PYTHONPATH=$PYTHONPATH:my_path/HINTS_petsc <br>
 3.4. cd example <br>

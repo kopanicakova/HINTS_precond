@@ -1,0 +1,27 @@
+To setup the code:
+
+1. Unzip the contents of the supplied zip file to a location on your personal computer.
+2. Make sure you have python 3.7 installed (or newer, newest version may be inconsistent).
+3. Make sure you have pip installed.
+* We recommend using a GPU, since training a DeepONet can require large computational resources.
+If that is the case, a proper installation of the GPU drivers (such as CUDE integration, etc.) is expected.
+4. Open a command line interface and switch to the project folder.
+5. Run 'pip install -r requirements.txt' from within the project folder. (Typical installation time on "normal" desktop computer is < 2 mins.)
+
+To use the code:
+
+The usage of the code is through a file called 'configs.py' located in the root of the project folder.
+1. To train a DeepONet, choose the desired parameters (such as the dimension, the problem, the domain size, etc.).
+2. Set the variable 'ITERATION_METHOD' to 'DeepONet'.
+* This will automatically create data, train a DeepONet and finally throw an error.
+The reason for that is the code is able to do 'Only DeepONet' mode, which is not intended in most cases of HINTS.
+3. During training, the folder 'debug_figs' will start logging images based on the plotting interval config.
+These help monitor the training and see that the network trains well.
+4. After training is done, a model is saved into models folder.
+5. Set the variable 'ITERATION_METHOD' to 'Numerical_DeepONet_Hybrid' to run the HINTS.
+6. The outputs are logged into the outputs folder. (Typical run time for 1D examples is < 10 mins, including training of DeepONet. Expected output is reported in manuscript, see for example convergence plots on Figure 3B for 1D Poisson equation and HINTS-Jacobi solver.)
+
+To train another DeepONet (change the problem/scenario) the results.npz file in the output folder needs to be deleted.
+Alternatively, the flag 'FORCE_RETRAIN' can be set to True.
+
+* We recommend changing the name of the models and the datasets at the bottom of the configs file as per the simulation one wishes to run.
