@@ -535,11 +535,15 @@ class MultiGrid():
 
     @staticmethod
     def create_restrictor_prolongator(size):
+
         # size: including [0] and [-1], for the bigger matrix/vector
         if configs.DIMENSIONS == 1:
             size_reduced = int((size[0] - 2) / 2)
-            restrictor = np.zeros((size_reduced, size))
-            prolongator = np.zeros((size, size_reduced))
+
+            restrictor = np.zeros((size_reduced, size[0]-2))
+            prolongator = np.zeros((size[0]-2, size_reduced))
+
+
             for i in range(size_reduced):
                 prolongator[2 * i:2 * i + 3, i] = [0.5, 1.0, 0.5]
                 restrictor[i, 2 * i:2 * i + 3] = [0.25, 0.5, 0.25]
