@@ -61,12 +61,12 @@ Alternatively, the flag 'FORCE_RETRAIN' can be set to True. <br>
 
 
 
-#### Examples to reproduce the results from the manuscript
-We provide example config files as well as datasets and trained models to reproduce the results reported in the manuscript.
+#### Reproducing the results from the manuscript
+We provide examples of config files, datasets, and pre-trained models in order to reproduce the results reported in the manuscript. <br>
 In particular: <br>
-*example_configs/configs_1D_Helmholtz_HINTS_Jacobi.py*  can be used to run the HINTS-Jacobi solver for the Helmholtz problem and reproduce Figure 3 in the manuscript
-*example_configs/configs_1D_Poisson_HINTS_Jacobi.py*  can be used to run the HINTS-Jacobi solver for the Poisson problem and reproduce Figure 2 in the manuscript
-*example_configs/configs_1D_Poisson_MG_HINTS_GS_smoother.py*  can be used to run MG solver with HINTS-GS(Gauss-Seidel) smoother for the Poisson problem and reproduce Figure 5 in the manuscript
+**example_configs/configs_1D_Helmholtz_HINTS_Jacobi.py**  can be used to run the HINTS-Jacobi solver for the Helmholtz problem and reproduce Figure 3 in the manuscript <br>
+**example_configs/configs_1D_Poisson_HINTS_Jacobi.py**  can be used to run the HINTS-Jacobi solver for the Poisson problem and reproduce Figure 2 in the manuscript <br>
+**example_configs/configs_1D_Poisson_MG_HINTS_GS_smoother.py**  can be used to run MG solver with HINTS-GS(Gauss-Seidel) smoother for the Poisson problem and reproduce Figure 5 in the manuscript <br>
 
 To run the desired experiments, please replace config.py with any of these files.
 
