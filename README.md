@@ -59,6 +59,20 @@ Alternatively, the flag 'FORCE_RETRAIN' can be set to True. <br>
 
 * We recommend changing the name of the models and the datasets at the bottom of the configs file as per the simulation one wishes to run. 
 
+
+
+#### Examples to reproduce the results from the manuscript
+We provide example config files as well as datasets and trained models to reproduce the results reported in the manuscript.
+In particular: <br>
+*example_configs/configs_1D_Helmholtz_HINTS_Jacobi.py*  can be used to run the HINTS-Jacobi solver for the Helmholtz problem and reproduce Figure 3 in the manuscript
+*example_configs/configs_1D_Poisson_HINTS_Jacobi.py*  can be used to run the HINTS-Jacobi solver for the Poisson problem and reproduce Figure 2 in the manuscript
+*example_configs/configs_1D_Poisson_MG_HINTS_GS_smoother.py*  can be used to run MG solver with HINTS-GS(Gauss-Seidel) smoother for the Poisson problem and reproduce Figure 5 in the manuscript
+
+To run the desired experiments, please replace config.py with any of these files.
+
+
+
+
 ## PETSc-based code: large-scale hybrid preconditioning for Krylov methods and demonstration of interfacing with state-of-the-art linear algebra
 This code of HINTS uses Firedrake for assembly of finite element systems and PETSc for linear algebra, including standard stationary and Krylov methods
 
@@ -106,7 +120,6 @@ To execute the different experiments, one can use the following commands:
 	3.5.1. HYPRE-AMG preconditioner: 
 		- using uploaded samples for k=6, you can test the code as
 			python3 -u hints_test_hypre_sampled_k.py  --num_samples_total 10000 --num_samples 100000 --k_sigma 6.0 
-
 
 
 	3.5.1. HINTS-MG preconditioner, e.g., for the example where DON is trained with only 10,000 on cube 8x8x8 
