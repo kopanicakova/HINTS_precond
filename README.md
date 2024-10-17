@@ -8,14 +8,12 @@ If you use the developed code/its components for your research, please use the f
 @article{zktrpkk_24,
 title = {Blending Neural Operators and Relaxation Methods in PDE Numerical Solvers},
 author = {Enrui Zhang and Adar Kahana and Alena Kopani{\v{c}}{\'a}kov{\'a} and Eli Turkel and Rishikesh Ranade and Jay Pathak and George Em Karniadakis},
-journal = {},
-volume = {0},
-number = {0},
-pages = {},
-year = {},
-doi = {},
-URL = {},
-note = {Accepted for the publication in Nature Machine intelligence.},
+journal = {Nature Machine Intelligence},
+pages = {2522-5839},
+year = {2024},
+doi = {10.1038/s42256-024-00910-x},
+URL = {https://www.nature.com/articles/s42256-024-00910-x},
+note={https://arxiv.org/abs/2208.13273},
 }
 ```
 
